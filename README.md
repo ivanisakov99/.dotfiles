@@ -10,3 +10,12 @@ dotfiles for Mac OS
 - Trackpad (Three Finger Drag and Tap to Click)
 - Git (config and SSH)
 
+## Search and Install Packages
+### Homebrew
+    brew search "name"
+    brew info "name"
+    brew install (--cask) "name"
+
+### Mas
+    mas search "name"
+    mas install "id"
