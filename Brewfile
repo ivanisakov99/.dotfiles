@@ -10,8 +10,8 @@ brew "exa"
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
-# Application launcher and productivity software
-cask "alfred"
+# Mac App Store command-line interface
+brew "mas"
 # Tools for building Android applications
 cask "android-studio"
 # Client for the Dropbox cloud storage service
