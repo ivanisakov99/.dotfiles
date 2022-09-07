@@ -8,16 +8,14 @@ brew "bat"
 brew "exa"
 # Distributed revision control system
 brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Mac App Store command-line interface
 brew "mas"
 # Tools for building Android applications
 cask "android-studio"
-# Client for the Dropbox cloud storage service
-cask "dropbox"
-# Git client focusing on productivity
-cask "gitkraken"
 # Web browser
 cask "google-chrome"
 # Move and resize windows using keyboard shortcuts or snap areas
