@@ -24,3 +24,12 @@ cask "google-chrome"
 cask "rectangle"
 # Open-source code editor
 cask "visual-studio-code"
+mas "Keynote", id: 409183694
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "The Unarchiver", id: 425424353
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
