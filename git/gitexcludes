@@ -1,0 +1,10 @@
+*.iml
+/.idea
+/.vscode
+/build
+*.DS_Store
+.rakeTasks
+rubocop.yml
+.gradle
+node_modules/
+package-lock.json

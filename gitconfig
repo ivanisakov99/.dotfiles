@@ -1,6 +1,25 @@
 [user]
 	name = Ivan Isakov
 	email = 60196280+ivanisakov99@users.noreply.github.com
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+[core]
+    editor = 'vim'
+    pager = less -FMRiX
+    excludesFile = ./git/gitexcludes
+[push]
+    default = simple
+[alias]
+    dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%C    reset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 
 # Other possible Git configurations.
 # - Set the default editor (nano, VS Code, etc.)
