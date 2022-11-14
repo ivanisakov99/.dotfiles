@@ -1,21 +1,36 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Modern replacement for 'ls'
 brew "exa"
 # Distributed revision control system
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Mac App Store command-line interface
 brew "mas"
+# Development kit for the Java programming language
+brew "openjdk"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Safe, concurrent, practical language
+brew "rust"
 # Tools for building Android applications
 cask "android-studio"
+# Web browser
+cask "firefox"
 # Web browser
 cask "google-chrome"
 # Move and resize windows using keyboard shortcuts or snap areas
