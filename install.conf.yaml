@@ -6,22 +6,41 @@
 
 - link:
     #~/.vim: vim
-    ~/.vimrc: vimrc
-    ~/.zshrc:
+    # Vim
+    ~/.vimrc: vim/vimrc
+
+    # Zsh
+    ~/.zprofile:
+        path: zsh/zprofile
     ~/.zshenv:
-    ~/.gitconfig:
+        path: zsh/zshenv
+    ~/.zshrc:
+        path: zsh/zshrc
+    ~/.zlogout:
+        path: zsh/zlogout
+
+    # Bash
+
+    # Git
+    ~/.config/git:
+        create: true
+
+    # Bat
     ~/.config/bat:
         create: true
         path: bat
 
+    # Tmux
+    ~/.tmux:
+
 - create:
     - ~/Developer
 
-- shell:
-    #- [git submodule update --init --recursive, Installing submodules]
-    - 
-      command: ./setup_homebrew.zsh
-      stdout: true
-      stdin: true
-      stderr: true
+# - shell:
+#     #- [git submodule update --init --recursive, Installing submodules]
+#     - 
+#       command: ./setup\ scripts/setup_homebrew.zsh
+#       stdout: true
+#       stdin: true
+#       stderr: true
 

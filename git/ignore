@@ -1,3 +1,4 @@
+# gitignore reference: https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 *.iml
 /.idea
 /.vscode

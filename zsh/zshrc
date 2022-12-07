@@ -1,0 +1,79 @@
+# Set Variables
+# Syntax highlighting for man pages using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
+
+# Change ZSH Options
+
+# Create Aliases
+# alias ls='ls -lAFh'
+alias ls='exa -laFh --git'
+alias exa='exa -laFh --git'
+alias bbd='brew bundle dump --force --describe --file ~/.dotfiles/Brewfile'
+alias trail='<<<${(F)path}'
+
+# Customise Prompt(s)
+autoload -U colors && colors # Enable colours
+DEFAULT=%{$fg[default]%}
+WHITE=%{$fg[white]%}
+CYAN=%{$fg[cyan]%}
+
+setopt promptsubst
+export PROMPT='
+$WHITE(%D %*) [%1~]$DEFAULT
+$CYAN<%?> %# $DEFAULT'
+
+export PROMPT='${(r:$COLUMNS::-:)}'$PROMPT
+
+# export RPROMPT='%*'
+
+# Add Locations to $PATH Variable
+
+
+# Write Handy Functions
+function mkcd() {
+    mkdir -p "$@" && cd "$_";
+}
+
+function open_on_github() {
+    if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+        echo "Not a repository";
+        return 1;
+    fi
+
+    local repoRoot=$(git rev-parse --show-toplevel);
+    local pathToFile="$(pwd)/";
+
+    if [[ -f $1 ]]; then
+        pathToFile+="blob/main/$1";
+    elif [[ -d $1 ]]; then
+        pathToFile+="tree/main/$1";
+    fi
+
+    local url="$(git config remote.origin.url | sed "s/git@\(.*\):\(.*\).git/https:\/\/\1\/\2/")$(echo $pathToFile | sed "s#$repoRoot##")";
+
+    if ! curl --output /dev/null --silent --head --fail $url; then
+        echo "Page does not exist on GitHub";
+        return 1;
+    fi
+    
+    open $url;
+    return 0;
+}
+
+# ...and Other Surprises
+
+
+# There are many other ways to customize your shell:
+# - Set variables
+# - Create aliases
+# - Customize the prompt
+# - Write handy functions
+# - Change ZSH options
+# - Adjust history functionality
+# - Improve line editor (completions, menu, navigation, etc.)
+# - Add locations to $PATH variable (or $path array)
+# - Use ZSH plugins
+# - Change key bindings
+# - Add "zstyles" for completions & more

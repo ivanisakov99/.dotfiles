@@ -27,12 +27,20 @@ brew "openjdk"
 brew "ruby"
 # Safe, concurrent, practical language
 brew "rust"
+# Terminal multiplexer
+brew "tmux"
+# Transfer files from and to an Android smartphone
+cask "android-file-transfer"
 # Tools for building Android applications
 cask "android-studio"
 # Web browser
 cask "firefox"
 # Web browser
 cask "google-chrome"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Open-source code editor
