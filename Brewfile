@@ -14,6 +14,8 @@ brew "git-lfs"
 brew "httpie"
 # Mac App Store command-line interface
 brew "mas"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Tools for building Android applications
 cask "android-studio"
 # Web browser
