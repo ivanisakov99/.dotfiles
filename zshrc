@@ -15,12 +15,7 @@ alias bbd='brew bundle dump --force --describe --file ~/.dotfiles/Brewfile'
 alias trail='<<<${(F)path}'
 
 # Customise Prompt(s)
-setopt promptsubst
-export PROMPT='
-%1~ %L %# '
-export PROMPT='${(r:$COLUMNS::-:)}'$PROMPT
-
-export RPROMPT='%*'
+source ENV_IMPROVEMENT_ROOT/zsh.d/themes/default.zsh
 
 # Add Locations to $PATH Variable
 # Add Visual Studio Code (code)
@@ -28,7 +23,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # Write Handy Functions
 function mkcd() {
- mkdir -p "$@" && cd "$_";
+    mkdir -p "$@" && cd "$_";
 }
 
 # ...and Other Surprises

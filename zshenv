@@ -1,4 +1,4 @@
-echo "Hello from .zshenv"
+export ENV_IMPROVEMENT_ROOT="$(cd "$(dirname "$0")" && pwd)"
 
 function exists() {
     # `command -v` is similar to `which`
