@@ -1,4 +1,4 @@
-export ENV_IMPROVEMENT_ROOT="$(cd "$(dirname "$0")" && pwd)"
+export ENV_IMPROVEMENT_ROOT="$(cd "$(dirname "${ZSH_SOURCE}")" && pwd)"
 
 function exists() {
     # `command -v` is similar to `which`
