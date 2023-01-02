@@ -33,13 +33,17 @@ fi
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+######################### ZSH options ################################
+setopt ALWAYS_TO_END	       # Push that cursor on completions
+setopt AUTO_NAME_DIRS          # Change directories to variable names
+setopt AUTO_PUSHD              # Push directories on every cd
+
 
 # There are many other ways to customize your shell:
 # - Set variables
 # - Create aliases
 # - Customize the prompt
 # - Write handy functions
-# - Change ZSH options
 # - Adjust history functionality
 # - Improve line editor (completions, menu, navigation, etc.)
 # - Add locations to $PATH variable (or $path array)
