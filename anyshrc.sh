@@ -52,3 +52,8 @@ export SYSSCREENRC=$ENV_IMPROVEMENT_ROOT/var/screenrc
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias ll='ls -lAFh'
+
+######################### User functions #############################
+function mkcd() {
+    mkdir -p "$@" && cd "$_";
+}

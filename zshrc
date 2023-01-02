@@ -31,13 +31,6 @@ fi
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# Write Handy Functions
-function mkcd() {
-    mkdir -p "$@" && cd "$_";
-}
-
-# ...and Other Surprises
-
 
 # There are many other ways to customize your shell:
 # - Set variables
