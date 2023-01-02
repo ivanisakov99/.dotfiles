@@ -38,13 +38,21 @@ setopt ALWAYS_TO_END	       # Push that cursor on completions
 setopt AUTO_NAME_DIRS          # Change directories to variable names
 setopt AUTO_PUSHD              # Push directories on every cd
 
+######################### History options ############################
+setopt EXTENDED_HISTORY        # Store time in history
+setopt HIST_EXPIRE_DUPS_FIRST  # Unique events are more usefull to me
+setopt HIST_VERIFY	           # Make those history commands nice
+setopt INC_APPEND_HISTORY      # Immediatly insert history into history file
+HISTSIZE=16000                 # Spots for duplicates/uniques
+SAVEHIST=15000                 # Unique events guarenteed
+HISTFILE=~/.history
+setopt histignoredups          # Ignore duplicates of the previous event 
 
 # There are many other ways to customize your shell:
 # - Set variables
 # - Create aliases
 # - Customize the prompt
 # - Write handy functions
-# - Adjust history functionality
 # - Improve line editor (completions, menu, navigation, etc.)
 # - Add locations to $PATH variable (or $path array)
 # - Use ZSH plugins
