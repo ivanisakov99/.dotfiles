@@ -49,10 +49,6 @@ HISTFILE=~/.history
 setopt histignoredups          # Ignore duplicates of the previous event 
 
 # There are many other ways to customize your shell:
-# - Set variables
-# - Create aliases
-# - Customize the prompt
-# - Write handy functions
 # - Improve line editor (completions, menu, navigation, etc.)
 # - Add locations to $PATH variable (or $path array)
 # - Use ZSH plugins
