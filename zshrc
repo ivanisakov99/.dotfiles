@@ -16,6 +16,8 @@ alias bbd="brew bundle dump --force --describe --file $ENV_IMPROVEMENT_ROOT/Brew
 alias trail='<<<${(F)path}'
 
 # Customise Prompt(s)
+autoload colors && colors
+
 ## Override ZSH_THEME to other themes (e.g. vcs)
 ZSH_THEME='vcs_info'
 if [[ -z "$ZSH_THEME" ]]; then
