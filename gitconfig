@@ -9,7 +9,7 @@
 [core]
     editor = 'vim'
     pager = less -FMRiX
-    excludesFile = ./git/gitexcludes
+	excludesFile = /Users/ivan/.dotfiles/git/gitExcludes
 [push]
     default = simple
 [alias]

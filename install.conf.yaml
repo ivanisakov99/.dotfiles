@@ -27,3 +27,7 @@
       command: ./setup_zsh.zsh
       stdout: true
       stderr: true
+    - 
+      command: ./setup_git.zsh
+      stdout: true
+      stderr: true
