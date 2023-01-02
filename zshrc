@@ -9,9 +9,8 @@ export NULLCMD=bat
 
 # Create Aliases
 # alias ls='ls -lAFh'
-alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
-alias bbd='brew bundle dump --force --describe --file ~/.dotfiles/Brewfile'
+alias bbd="brew bundle dump --force --describe --file $ENV_IMPROVEMENT_ROOT/Brewfile"
 alias trail='<<<${(F)path}'
 
 # Customise Prompt(s)
