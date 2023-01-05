@@ -48,10 +48,31 @@ SAVEHIST=15000                 # Unique events guarenteed
 HISTFILE=~/.history
 setopt histignoredups          # Ignore duplicates of the previous event 
 
+######################### Completion #################################
+# These are some (mostly) sane defaults, if you want your own settings, I
+# recommend using `compinstall` to choose them.  See 'man zshcompsys' for more
+# info about this stuff.
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _approximate
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' menu select=long
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle ':completion:*' use-compctl true
+zstyle ':completion:*:descriptions' format '%B%d%b'
+zstyle ':completion:*:messages' format '%B%d%b'
+zstyle ':completion::*' use-cache on
+zstyle :compinstall filename '/Users/ivan/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
 # There are many other ways to customize your shell:
-# - Improve line editor (completions, menu, navigation, etc.)
 # - Add locations to $PATH variable (or $path array)
 # - Use ZSH plugins
 # - Change key bindings
-# - Add "zstyles" for completions & more
-
