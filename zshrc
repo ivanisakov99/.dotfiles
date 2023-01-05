@@ -72,6 +72,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+autoload zmv
+alias 'zcp=noglob zmv -W -C'
+alias 'zln=noglob zmv -W -L'
+alias 'zmv=noglob zmv -W -M'
+
 # There are many other ways to customize your shell:
 # - Add locations to $PATH variable (or $path array)
 # - Use ZSH plugins
